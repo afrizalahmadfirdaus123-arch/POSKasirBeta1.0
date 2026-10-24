@@ -27,33 +27,6 @@ npm run dev
 ```
 
 Aplikasi web POS akan aktif di: `http://localhost:3000`
-
----
-
-### Langkah 3: Menjalankan Versi Mobile (React Native + Expo)
-Kode aplikasi mobile lengkap dalam 1 file berada di:
-📁 **`src/mobile-export/App.tsx`**
-
-Untuk menjalankannya di HP Android/iOS menggunakan Expo:
-
-```bash
-# Opsi A: Buat folder project expo baru
-npx create-expo-app AfzPOS-Mobile
-cd AfzPOS-Mobile
-
-# Install ikon expo
-npx expo install @expo/vector-icons
-
-# Salin isi dari src/mobile-export/App.tsx dan timpa file App.tsx di project expo Anda
-
-# Jalankan Expo
-npx expo start
-```
-Scan QR code yang muncul menggunakan aplikasi **Expo Go** di HP Android atau iOS Anda.
-
----
-
-## 📂 Struktur Berkas Penting
 * `src/App.tsx`: Antarmuka Web POS Terminal
 * `src/mobile-export/App.tsx`: Kode 1 file lengkap React Native + Expo (Kasir, Stok/Gramasi, Order, WhatsApp Report, Settings)
 * `src/context/POSContext.tsx`: Manajemen state global POS, keranjang belanja, dan multi-tender payment
